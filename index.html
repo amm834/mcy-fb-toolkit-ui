@@ -28,8 +28,45 @@
 <main>
     <section class="container">
         <div class="text-end">
-            <button class="btn btn-success mt-4">Add User</button>
+            <button class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#createModal">Add User</button>
         </div>
+
+        <!-- Create Modal Start -->
+        <div class="modal fade" id="createModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput2" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput2"
+                                >
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput3" class="form-label">Due Date</label>
+                                <input type="date" class="form-control" id="exampleFormControlInput3"
+                                >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Ok</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--        Create Modal End -->
         <table class="table mt-5">
             <thead>
             <tr>
